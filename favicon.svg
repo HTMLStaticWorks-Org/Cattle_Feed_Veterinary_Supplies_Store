@@ -1,0 +1,16 @@
+<svg viewBox="0 0 48 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="fcFace" x1="5" y1="4" x2="43" y2="45" gradientUnits="userSpaceOnUse"><stop stop-color="#e9f2c5"/><stop offset=".42" stop-color="#a9c77f"/><stop offset="1" stop-color="#527e4d"/></linearGradient>
+ <linearGradient id="fcSide" x1="7" y1="8" x2="40" y2="42" gradientUnits="userSpaceOnUse"><stop stop-color="#8db16e"/><stop offset="1" stop-color="#244c34"/></linearGradient>
+ <linearGradient id="fcGold" x1="9" y1="5" x2="37" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#fff6c9"/><stop offset="1" stop-color="#c49a48"/></linearGradient>
+ <filter id="fcShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#07140c" flood-opacity=".42"/></filter>
+</defs>
+<path d="M24 3 43 13.5v21L24 45 5 34.5v-21L24 3Z" fill="#10251a" stroke="#d3e2ad" stroke-width="1.2" filter="url(#fcShadow)"/>
+<path d="M24 7 38.5 15v17L24 40 9.5 32V15L24 7Z" fill="url(#fcSide)" stroke="#d7e7b4" stroke-opacity=".75"/>
+<path d="M24 8 38 15.7 24 23.6 10 15.7 24 8Z" fill="url(#fcGold)"/>
+<path d="M24 23.6 38 15.7v16.1L24 39.8V23.6Z" fill="url(#fcFace)"/>
+<path d="M24 23.6 10 15.7v16.1l14 8V23.6Z" fill="#6e9a5d"/>
+<path d="M14 28.5c5.8-.3 9.1-4.1 10.5-11.2 4.2 4.7 7.1 6.3 12.1 6.1-2.1 6.5-6.3 10.3-12.4 10.6-4.1.2-7.4-1.7-10.2-5.5Z" fill="#f5f2d9" stroke="#315c39" stroke-width="1.1"/>
+<path d="M16.3 31.4c4.2-4.3 8.5-7.5 15.6-10.6" fill="none" stroke="#527e4d" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M13 14.7 24 8.5l10.7 6" fill="none" stroke="#fff8dc" stroke-opacity=".85" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
