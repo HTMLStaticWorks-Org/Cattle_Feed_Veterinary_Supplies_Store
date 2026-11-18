@@ -1105,3 +1105,250 @@ body.dark .capabilities-heading p{color:#c5d1c3}
  .split-info-section .split-info-copy h2{font-size:clamp(30px,8vw,40px)!important}
  .split-info-section .check-list{grid-template-columns:1fr!important}
 }
+
+
+/* ===== V15: Strict Theme Contrast, Visibility, Hover & Card Image Fixes ===== */
+
+/* 1. Navbar CTA button hover visibility in both White and Dark themes */
+.nav-cta,
+.main-nav > a.nav-cta {
+  background: #244c34!important;
+  color: #ffffff!important;
+  border: 1px solid #244c34!important;
+}
+.nav-cta:hover,
+.nav-cta:focus-visible,
+.main-nav > a.nav-cta:hover,
+.main-nav > a.nav-cta:focus-visible {
+  background: #356848!important;
+  color: #ffffff!important;
+  border-color: #356848!important;
+}
+body.dark .nav-cta,
+body.dark .main-nav > a.nav-cta {
+  background: #d6e5b0!important;
+  color: #15261a!important;
+  border: 1px solid #d6e5b0!important;
+}
+body.dark .nav-cta:hover,
+body.dark .nav-cta:focus-visible,
+body.dark .main-nav > a.nav-cta:hover,
+body.dark .main-nav > a.nav-cta:focus-visible {
+  background: #eaf3ce!important;
+  color: #102015!important;
+  border-color: #eaf3ce!important;
+}
+
+/* 2. Footer brand name ("FarmCare") and social icon hover visibility in both themes */
+.footer .brand,
+.footer .brand .brand-name,
+body.dark .footer .brand,
+body.dark .footer .brand .brand-name {
+  color: #ffffff!important;
+}
+.footer .brand:hover .brand-name,
+.footer .brand:focus-visible .brand-name {
+  color: #d8e8b8!important;
+}
+.footer .footer-social a {
+  color: #e6eddf!important;
+  border: 1px solid rgba(255, 255, 255, 0.28)!important;
+}
+.footer .footer-social a:hover,
+.footer .footer-social a:focus-visible {
+  background: #d8e8b8!important;
+  color: #15271a!important;
+  border-color: #d8e8b8!important;
+}
+.footer .footer-social a:hover svg,
+.footer .footer-social a:focus-visible svg {
+  color: #15271a!important;
+}
+
+/* 3. Products page: "Products meet real-world routines" (.product-gallery) cards in White & Dark themes */
+.product-gallery,
+body.dark .product-gallery {
+  background-color: #162d1f!important;
+  background-image: linear-gradient(90deg, rgba(18, 39, 26, 0.88), rgba(18, 39, 26, 0.78)), url('products-photo-01.webp')!important;
+  background-size: cover!important;
+  background-position: center 48%!important;
+  color: #ffffff!important;
+}
+.product-gallery .section-head .eyebrow,
+body.dark .product-gallery .section-head .eyebrow {
+  color: #dcebb7!important;
+}
+.product-gallery .section-head h2,
+body.dark .product-gallery .section-head h2 {
+  color: #ffffff!important;
+}
+.product-gallery .product-routine-highlights article {
+  background: #ffffff!important;
+  border: 1px solid #d5dfd0!important;
+  color: #14261a!important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16)!important;
+}
+.product-gallery .product-routine-highlights article small {
+  color: #244c34!important;
+  font-size: 11px!important;
+  font-weight: 800!important;
+  letter-spacing: 0.12em!important;
+  text-shadow: none!important;
+}
+.product-gallery .product-routine-highlights article h3 {
+  color: #14261a!important;
+  font-size: 20px!important;
+  font-weight: 800!important;
+  text-shadow: none!important;
+}
+.product-gallery .product-routine-highlights article p {
+  color: #2c3e30!important;
+  font-size: 13px!important;
+  font-weight: 500!important;
+  line-height: 1.65!important;
+  text-shadow: none!important;
+}
+body.dark .product-gallery .product-routine-highlights article {
+  background: #1b2e22!important;
+  border: 1px solid #48634f!important;
+  color: #f4f7f0!important;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.32)!important;
+}
+body.dark .product-gallery .product-routine-highlights article small {
+  color: #cce29f!important;
+  text-shadow: none!important;
+}
+body.dark .product-gallery .product-routine-highlights article h3 {
+  color: #ffffff!important;
+  text-shadow: none!important;
+}
+body.dark .product-gallery .product-routine-highlights article p {
+  color: #e2ece0!important;
+  text-shadow: none!important;
+}
+
+/* 4. Products page: "From the store room to the field." (.product-routine-section) photo cards in White & Dark themes */
+.product-routine-section,
+body.dark .product-routine-section {
+  background-color: #13281c!important;
+  background-image: linear-gradient(90deg, rgba(13, 31, 20, 0.88), rgba(13, 31, 20, 0.74)), url('products-photo-07.webp')!important;
+  background-size: cover!important;
+  background-position: center!important;
+  color: #ffffff!important;
+}
+.product-routine-section .routine-photo-grid article:nth-child(1),
+body.dark .product-routine-section .routine-photo-grid article:nth-child(1) {
+  --routine-image: url('products-photo-02.webp');
+}
+.product-routine-section .routine-photo-grid article:nth-child(2),
+body.dark .product-routine-section .routine-photo-grid article:nth-child(2) {
+  --routine-image: url('products-photo-03.webp');
+}
+.product-routine-section .routine-photo-grid article:nth-child(3),
+body.dark .product-routine-section .routine-photo-grid article:nth-child(3) {
+  --routine-image: url('products-photo-04.webp');
+}
+.product-routine-section .routine-photo-grid article,
+body.dark .product-routine-section .routine-photo-grid article {
+  background-color: #15251a!important;
+  background-image: linear-gradient(0deg, rgba(9, 24, 14, 0.90), rgba(9, 24, 14, 0.18)), var(--routine-image)!important;
+  background-size: cover!important;
+  background-position: center!important;
+  border: 1px solid rgba(255, 255, 255, 0.34)!important;
+  color: #ffffff!important;
+}
+.product-routine-section .routine-photo-grid article b,
+body.dark .product-routine-section .routine-photo-grid article b {
+  color: #dcebb7!important;
+  font-size: 10px!important;
+  font-weight: 800!important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6)!important;
+}
+.product-routine-section .routine-photo-grid article h3,
+body.dark .product-routine-section .routine-photo-grid article h3 {
+  color: #ffffff!important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6)!important;
+}
+.product-routine-section .routine-photo-grid article p,
+body.dark .product-routine-section .routine-photo-grid article p {
+  color: #eef4ec!important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6)!important;
+}
+
+/* 5. Livestock Care page: "A few essentials to keep in focus" (.care-grid-section) cards in White & Dark themes */
+.care-grid-section,
+body.dark .care-grid-section {
+  background-color: #152c1e!important;
+  background-image: linear-gradient(90deg, rgba(15, 34, 22, 0.87), rgba(15, 34, 22, 0.77)), url('faq-goats.webp')!important;
+  background-size: cover!important;
+  background-position: center!important;
+  color: #ffffff!important;
+}
+.care-grid-section .care-grid article {
+  background: #ffffff!important;
+  border: 1px solid #d5dfd0!important;
+  color: #14261a!important;
+}
+.care-grid-section .care-grid article h3 {
+  color: #14261a!important;
+  font-size: 19px!important;
+  font-weight: 800!important;
+  text-shadow: none!important;
+}
+.care-grid-section .care-grid article p {
+  color: #2c3e30!important;
+  font-size: 13px!important;
+  font-weight: 500!important;
+  line-height: 1.65!important;
+  text-shadow: none!important;
+}
+body.dark .care-grid-section .care-grid article {
+  background: #1c2e23!important;
+  border: 1px solid #48634f!important;
+  color: #f5f7f0!important;
+}
+body.dark .care-grid-section .care-grid article h3 {
+  color: #ffffff!important;
+  text-shadow: none!important;
+}
+body.dark .care-grid-section .care-grid article p {
+  color: #e2ece0!important;
+  text-shadow: none!important;
+}
+
+/* 6. Livestock Care page: "Important" disclaimer box (.care-disclaimer .disclaimer) in White & Dark themes */
+.care-disclaimer .disclaimer {
+  background: #ffffff!important;
+  border: 1px solid #dcd6c4!important;
+  border-left: 5px solid #c39d55!important;
+  color: #14261a!important;
+  align-items: center!important;
+  box-shadow: 0 10px 26px rgba(20, 40, 26, 0.08)!important;
+}
+.care-disclaimer .disclaimer b {
+  color: #6b4c1b!important;
+  font-size: 14px!important;
+  font-weight: 800!important;
+  text-shadow: none!important;
+}
+.care-disclaimer .disclaimer p {
+  color: #1c2b20!important;
+  font-size: 13px!important;
+  font-weight: 500!important;
+  line-height: 1.65!important;
+  text-shadow: none!important;
+}
+body.dark .care-disclaimer .disclaimer {
+  background: #1c2e23!important;
+  border: 1px solid #3d5443!important;
+  border-left: 5px solid #d3a84e!important;
+  color: #f4f7f0!important;
+}
+body.dark .care-disclaimer .disclaimer b {
+  color: #ebd089!important;
+  text-shadow: none!important;
+}
+body.dark .care-disclaimer .disclaimer p {
+  color: #e5efe3!important;
+  text-shadow: none!important;
+}
